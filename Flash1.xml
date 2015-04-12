@@ -245,21 +245,21 @@
                                             </next>
                                           </block>
                                         </statement>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="movement_stop" id="127">
                                         <next>
-                                          <block type="movement_stop" id="127">
-                                            <next>
-                                              <block type="robot_delay" id="135" inline="true">
-                                                <value name="DELAY">
-                                                  <block type="math_number" id="136">
-                                                    <field name="NUM">200</field>
-                                                  </block>
-                                                </value>
+                                          <block type="robot_delay" id="135" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="136">
+                                                <field name="NUM">200</field>
                                               </block>
-                                            </next>
+                                            </value>
                                           </block>
                                         </next>
                                       </block>
-                                    </statement>
+                                    </next>
                                   </block>
                                 </next>
                               </block>
