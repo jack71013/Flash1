@@ -232,7 +232,26 @@
                                                                                       <block type="oled_drawtext" id="93">
                                                                                         <field name="TEXT">blowing up</field>
                                                                                         <next>
-                                                                                          <block type="movement_stutter" id="111"></block>
+                                                                                          <block type="robot_delay" id="123" inline="true">
+                                                                                            <value name="DELAY">
+                                                                                              <block type="math_number" id="130">
+                                                                                                <field name="NUM">2000</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <next>
+                                                                                              <block type="movement_stutter" id="111">
+                                                                                                <next>
+                                                                                                  <block type="robot_delay" id="113" inline="true">
+                                                                                                    <value name="DELAY">
+                                                                                                      <block type="math_number" id="121">
+                                                                                                        <field name="NUM">5000</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
                                                                                         </next>
                                                                                       </block>
                                                                                     </next>
